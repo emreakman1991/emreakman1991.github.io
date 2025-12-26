@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocku - Official Support & Info</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a; /* AppTheme.UI.backgroundDark */
+            --button-bg: #1e293b; /* AppTheme.UI.buttonBg */
+            --accent-orange: #f97316; /* Undo orange */
+            --accent-cyan: #22d3ee; /* Reshuffle cyan */
+            --gem-color: #06b6d4; /* AppTheme.Game.gem */
+            --text-primary: #f8fafc;
+            --text-secondary: #94a3b8;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace; /* Monospaced to match game theme */
+            background-color: var(--bg-dark);
+            color: var(--text-primary);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 500px;
+            padding: 24px;
+        }
+
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 4px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+            font-size: 1rem;
+        }
+
+        .btn-stack {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .btn {
+            background-color: var(--button-bg);
+            color: var(--text-primary);
+            text-decoration: none;
+            padding: 16px 32px;
+            border-radius: 50px; /* Gem/Capsule shape */
+            font-weight: bold;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.2s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            background-color: #334155;
+            border-color: var(--gem-color);
+        }
+
+        .btn-support { border-left: 4px solid var(--accent-orange); }
+        .btn-privacy { border-left: 4px solid var(--accent-cyan); }
+
+        .footer {
+            margin-top: 60px;
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+        }
+
+        .gem-icon { color: var(--gem-color); }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo">BLOCKU</div>
+        <div class="subtitle">Master the grid. Collect the gems <span class="gem-icon">◆</span></div>
+
+        <div class="btn-stack">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfUyBKXxekm2gsaOm-PgPLn4jSYklB6DnuIjUwbl5JxLGCMnw/viewform?usp=header" class="btn btn-support">
+                CONTACT & SUPPORT
+            </a>
+
+            <a href="https://docs.google.com/document/d/1JnmBP20iBKMyjiWDzBA3RBmAvJeLXXPRJlFpsoFpA5I/edit?usp=sharing" class="btn btn-privacy">
+                PRIVACY POLICY
+            </a>
+        </div>
+
+        <div class="footer">
+            &copy; 2025 Blocku. All rights reserved.
+        </div>
+    </div>
+
+</body>
+</html>
